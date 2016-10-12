@@ -1,0 +1,166 @@
+syntax = "proto2";
+
+package island;
+
+import "struct.proto";
+import "constant.proto";
+
+
+option optimize_for = LITE_RUNTIME;
+
+option java_package = "com.box.island.proto";  
+option java_outer_classname = "Access";  
+
+
+message CheckUpgradeReq {
+	enum DEF {
+		ID = 0;
+	}
+	required int32 version = 1;
+}
+
+message CheckUpgradeResp {
+	enum DEF {
+		ID = 1;
+	}
+	optional int32 new_version = 2;
+	optional string upgrade_info = 4;
+}
+
+
+message LoginReq {
+	enum DEF{
+		ID = 2;
+	}
+	required string account    = 1;
+    required string password    = 2;    
+}
+
+message LoginResp {
+	enum DEF{
+		ID = 3;
+	}
+	optional int32 accountid = 1;
+	optional int32 session = 2;
+	optional GameServer server = 3;
+}
+
+
+message LogoutReq {
+	enum DEF {
+		ID = 4;
+	}
+	required int32 accountid = 1;
+}
+
+message LogoutResp {
+	enum DEF {
+		ID = 5;
+	}
+}
+
+message RegisterReq {
+	enum DEF {
+		ID = 6;
+	}
+	required string account    = 1;
+    required string password    = 2;    
+}
+
+message RegisterResp {
+	enum DEF{
+		ID = 7;
+	}
+	optional int32 accountid = 1;
+	optional int32 session = 2;
+	optional GameServer server = 3;
+}
+
+
+
+message GetRegisterInfoReq {
+    enum DEF {
+        ID = 10;
+    }
+}
+
+message GetRegisterInfoResp {
+    enum DEF {
+        ID = 11;
+    }
+    required string account = 1;
+    required string password = 2;
+}
+
+
+message ConnectGameServerReq {
+	enum DEF {
+		ID = 40;
+	}
+	required int32 accountid = 1;
+	required int32 session = 2;
+}
+
+message ConnectGameServerResp {
+	enum DEF {
+		ID = 41;
+	}
+	optional int64 server_time = 1;
+}
+
+
+
+
+
+message GetServerTimeReq {
+    enum DEF {
+		ID = 106;
+	}
+}
+
+message GetServerTimeResp {
+    enum DEF {
+		ID = 107;
+	}
+	optional int64 server_time = 1;
+}
+
+message QuitGameServerReq {
+    enum DEF {
+        ID = 110;
+    }
+}
+
+message QuitGameServerResp {
+    enum DEF {
+        ID = 111;
+    }
+}
+
+message OnlineReq {
+    enum DEF {
+        ID = 120;
+    }
+    required int32 userid = 1;
+    required int32 access_service_id = 2;
+}
+
+message OnlineResp {
+    enum DEF {
+        ID = 121;
+    }
+}
+
+message OfflineReq {
+	enum DEF {
+		ID = 130;
+	}
+	required int32 userid = 1;
+}
+
+message OfflineResp {
+	enum DEF {
+		ID = 131;
+	}
+}
+
