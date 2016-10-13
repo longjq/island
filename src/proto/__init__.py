@@ -1,0 +1,1 @@
+__all__ = ['access_pb2','game_pb2']

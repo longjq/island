@@ -1,0 +1,226 @@
+{
+    "info": {
+        "name": "aaaaaa",
+        "remark": "bbbbbbbb",
+        "type": "1",
+        "size": [480,800],
+        "id": 5,
+        "war": "2v2,4v0"
+    },
+    "islands": [
+        {
+            "id": 9,
+            "type": "n",
+            "x": 240,
+            "y": 70,
+            "max": 5,
+            "radius": 25,
+            "forces": [30,30]
+        },
+        {
+            "id": 10,
+            "type": "n",
+            "x": 240,
+            "y": 730,
+            "max": 5,
+            "radius": 25,
+            "forces": [30,30]
+        },
+        {
+            "id": 1,
+            "type": "b",
+            "x": 90,
+            "y": 180,
+            "max": 70,
+            "radius": 30,
+            "forces": [30,30]
+        },
+        {
+            "id": 2,
+            "type": "b",
+            "x": 390,
+            "y": 180,
+            "max": 70,
+            "radius": 30,
+            "forces": [30,30]
+        },
+        {
+            "id": 3,
+            "type": "b",
+            "x": 90,
+            "y": 620,
+            "max": 70,
+            "radius": 30,
+            "forces": [30,30]
+        },
+        {
+            "id": 4,
+            "type": "b",
+            "x": 390,
+            "y": 620,
+            "max": 70,
+            "radius": 30,
+            "forces": [30,30]
+        },
+        {
+            "id": 5,
+            "type": "f",
+            "x": 150,
+            "y": 340,
+            "max": 40,
+            "radius": 30,
+            "gun_radius": 60,
+            "gun_life": 60,
+            "forces": [10,20]
+        },
+        {
+            "id": 6,
+            "type": "f",
+            "x": 330,
+            "y": 340,
+            "max": 40,
+            "radius": 30,
+            "gun_radius": 60,
+            "gun_life": 60,
+            "forces": [10,20]
+        },
+        {
+            "id": 7,
+            "type": "f",
+            "x": 150,
+            "y": 460,
+            "max": 40,
+            "radius": 30,
+            "gun_radius": 60,
+            "gun_life": 60,
+            "forces": [10,20]
+        },
+        {
+            "id": 8,
+            "type": "f",
+            "x": 330,
+            "y": 460,
+            "max": 40,
+            "radius": 30,
+            "gun_radius": 60,
+            "gun_life": 60,
+            "forces": [10,20]
+        }
+    ],
+    "lines": [
+        {
+            "src": 1,
+            "dst": 2
+        },
+        {
+            "src": 1,
+            "dst": 6
+        },
+        {
+            "src": 9,
+            "dst": 6
+        },
+        {
+            "src": 9,
+            "dst": 5
+        },
+        {
+            "src": 7,
+            "dst": 5
+        },
+        {
+            "src": 6,
+            "dst": 8
+        },
+        {
+            "src": 2,
+            "dst": 5
+        },
+        {
+            "src": 8,
+            "dst": 10
+        },
+        {
+            "src": 7,
+            "dst": 4
+        },
+        {
+            "src": 7,
+            "dst": 10
+        },
+        {
+            "src": 3,
+            "dst": 8
+        },
+        {
+            "src": 1,
+            "dst": 9
+        },
+        {
+            "src": 2,
+            "dst": 9
+        },
+        {
+            "src": 1,
+            "dst": 5
+        },
+        {
+            "src": 2,
+            "dst": 6
+        },
+        {
+            "src": 5,
+            "dst": 6
+        },
+        {
+            "src": 7,
+            "dst": 8
+        },
+        {
+            "src": 4,
+            "dst": 8
+        },
+        {
+            "src": 4,
+            "dst": 10
+        },
+        {
+            "src": 3,
+            "dst": 7
+        },
+        {
+            "src": 3,
+            "dst": 10
+        },
+        {
+            "src": 3,
+            "dst": 4
+        }
+    ],
+    "born": [
+        {
+            "count": 1,
+            "places": [
+                1
+            ]
+        },
+        {
+            "count": 1,
+            "places": [
+                2
+            ]
+        },
+        {
+            "count": 1,
+            "places": [
+                3
+            ]
+        },
+        {
+            "count": 1,
+            "places": [
+                4
+            ]
+        }
+    ]
+}
